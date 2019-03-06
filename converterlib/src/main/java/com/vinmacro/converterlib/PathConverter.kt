@@ -9,12 +9,14 @@ import java.io.File
 
 class PathConverter(internal var mContext: Context) {
 
+
     fun UriReturnFromExternalActivity(intent: Intent): Uri? {
         //Uri return from external activity
         val orgUri: Uri?
         orgUri = intent.data
         return orgUri
     }
+
 
     fun PathConvertedFromUri(intent: Intent): String {
         //path converted from Uri
